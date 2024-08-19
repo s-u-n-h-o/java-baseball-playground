@@ -42,7 +42,6 @@ public class BaseballgameController {
         }
 
         String answer = evaluateCondition();
-        System.out.println(answer);
 
         if(strike == 3) {
             System.out.println("3개의 숫자를 모두 맞히셨습니다! 게임 종료");
@@ -92,12 +91,10 @@ public class BaseballgameController {
      * */
     public void numberCompare(int[] randomNumber, int inputNumber, int i) {
         if(randomNumber[i] == inputNumber) { //숫자와 위치가 동일하다
-            System.out.println(randomNumber[i]+","+inputNumber);
             strike++;
             return;
         }
         if(randomNumber[1] == inputNumber || randomNumber[2] == inputNumber) { //숫자는 동일, 위치는 동일하지않음
-            System.out.println(randomNumber[1] +","+ randomNumber[2] +","+ inputNumber);
             ball++;
         }
     }
@@ -116,7 +113,6 @@ public class BaseballgameController {
         for (int number : num) {
             randomNumber[i++] = number;
         }
-        System.out.println(randomNumber[0]+","+randomNumber[1]+","+randomNumber[2]);
         return randomNumber;
     }
 }
