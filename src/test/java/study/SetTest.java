@@ -13,7 +13,7 @@ import java.util.Set;
 import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class setTest {
+public class SetTest {
 
     private Set<Integer> numbers;
 
